@@ -1,0 +1,19 @@
+<link rel="import" href="../../packages/polymer/polymer.html">
+<polymer-element name="x-foo">
+  <template>
+    <style>:host { display: inline-block; }</style>
+    This is a custom element which have <code>value</code> property:
+    <input type="text" value="{{value}}">
+  </template>
+  <script type="application/dart">
+    import 'package:polymer/polymer.dart';
+
+    @CustomTag('x-foo')
+    class XFoo extends PolymerElement {
+      @published
+      String value;
+
+      XFoo.created() : super.created();
+    }
+  </script>
+</polymer-element>
