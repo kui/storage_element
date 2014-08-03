@@ -1,4 +1,4 @@
-library storage_element.urlfragment_storage_element;
+library storage_element.local_storage_element;
 
 import 'package:polymer/polymer.dart';
 import 'storage.dart';
